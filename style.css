@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#header {
+    text-align: center;
+    padding: 50px 0;
+}
+#text-input, #voice-select {
+    width: 80%;
+    padding: 15px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+}
+#voice-select {
+    appearance: none;
+}
+#voice-select::-ms-expand {
+    display: none;
+}
+#voice-select option {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle, #00ff00 10%, transparent 70%);
+    animation: glow-animation 4s linear infinite;
+    opacity: 0;
+    z-index: -1;
+}
